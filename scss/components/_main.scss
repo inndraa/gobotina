@@ -1,0 +1,66 @@
+.main {
+  &__inner {
+    margin-top: 150px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+  }
+  &__btn-inner{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+  &__info {
+    &-title {
+      line-height: 70px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 900;
+      font-size: 62px;
+      span {
+        background: linear-gradient(
+          to right,
+          green 20%,
+          #198754 30%,
+          #27ce43 70%,
+          rgb(16, 114, 16) 80%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      background-size: 500% auto;
+      animation: textShine 5s ease-in-out infinite alternate;
+      }
+    }
+    &-subtitle {
+      opacity: 0.5;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    &-btn{
+        font-size: 18px;
+        font-weight: bold;
+        padding: 25px 160px; 
+        background: green;
+        border-radius: 50px;
+        color: white;
+        transition: all .3s;
+        &:hover{
+          background-color: rgb(5, 105, 5);   
+        }
+    }
+    &-link{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+  }
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}

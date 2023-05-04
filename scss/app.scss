@@ -1,0 +1,21 @@
+// CSS RESET
+@import './base/normalize';
+
+// FONTS
+@import './base/fonts';
+
+// CORE SETUP (PAGE WIDTH, ETC.)
+@import './base/core';
+
+// CSS VARIABLES
+@import './base/vars';
+
+
+// MAIN COMPONENTS
+@import './components/main';
+@import './components/logo';
+@import './components/bg';
+@import './components/header';
+@import './components/guide';
+@import './components/features';
+@import './components/contact';

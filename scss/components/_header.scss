@@ -1,0 +1,38 @@
+.header{
+    border-bottom: 1px solid #E7EBF0;
+    &__inner{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+    &__login-btn{
+        border-radius: 20px;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 25px;
+        background: #008000;
+        transition: all .2s;
+        &:hover{
+            background: transparent;
+            color: green;
+            outline: 1px solid #008000;
+        }
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &__item-link{
+        font-size: 15px;
+        transition: all .3s;
+        &:hover{
+            color: green;
+        }
+    }
+}
